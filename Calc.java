@@ -11,7 +11,6 @@ public class Calc extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocCalc.fxml"));
-        //Parent root = FXMLLoader.load(getClass().getResource("../../FXMLDoc_archive/FXMLDocCalc_08-29th-2017_11-30.fxml"));
 
         Scene scene = new Scene(root);
         stage.setTitle("Calc");
