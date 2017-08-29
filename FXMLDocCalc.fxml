@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="CalcPane" maxHeight="355.0" maxWidth="312.0" minHeight="351.0" minWidth="237.0" prefHeight="351.0" prefWidth="304.0" scaleShape="false" xmlns="http://javafx.com/javafx/8.0.66" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calc.FXMLDocCalcController">
+   <children>
+
+      <TextField fx:id="workSpace" alignment="BOTTOM_RIGHT" editable="false" layoutX="10.0" layoutY="10.0" prefHeight="82.0" prefWidth="282.0" text="">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+
+
+      <Button fx:id="button0" layoutX="11.0" layoutY="251.0" maxHeight="40.0" maxWidth="92.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#handleButton0Action" prefHeight="40.0" prefWidth="92.0" text="0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="button1" layoutX="11.0" layoutY="201.0" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#handleButton1Action" prefHeight="40.0" prefWidth="40.0" text="1">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="button2" layoutX="63.0" layoutY="201.0" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#handleButton2Action" prefHeight="40.0" prefWidth="40.0" text="2">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="button3" layoutX="115.0" layoutY="201.0" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#handleButton3Action" prefHeight="40.0" prefWidth="40.0" text="3">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="button4" layoutX="11.0" layoutY="151.0" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#handleButton4Action" prefHeight="40.0" prefWidth="40.0" text="4">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="button5" layoutX="63.0" layoutY="151.0" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#handleButton5Action" prefHeight="40.0" prefWidth="40.0" text="5">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="button6" layoutX="116.0" layoutY="151.0" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#handleButton6Action" prefHeight="40.0" prefWidth="40.0" text="6">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="button7" layoutX="11.0" layoutY="101.0" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#handleButton7Action" prefHeight="40.0" prefWidth="40.0" text="7">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="button8" layoutX="63.0" layoutY="101.0" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#handleButton8Action" prefHeight="40.0" prefWidth="40.0" text="8">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="button9" layoutX="115.0" layoutY="101.0" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#handleButton9Action" prefHeight="40.0" prefWidth="40.0" text="9">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonPeriod" layoutX="116.0" layoutY="251.0" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#handleButtonCommaAction" prefHeight="40.0" prefWidth="40.0" text=".">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+
+
+       <Button fx:id="buttonClear" alignment="CENTER" defaultButton="true" layoutX="234.0" layoutY="101.0" maxHeight="141.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#handleButtonClearAction" prefHeight="115.0" prefWidth="60.0" text="CE">
+           <font>
+               <Font name="System Bold" size="21.0" />
+           </font>
+       </Button>
+
+
+      <Button fx:id="buttonCalc" layoutX="12.0" layoutY="300.0" maxHeight="40.0" maxWidth="144.0" minHeight="40.0" minWidth="144.0" mnemonicParsing="false" onAction="#handleButtonCalcAction" prefHeight="40.0" prefWidth="144.0" text="=">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+
+
+      <Button fx:id="buttonAddition" alignment="CENTER" layoutX="166.0" layoutY="300.0" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#handleButtonAdditionAction" prefHeight="40.0" prefWidth="60.0" text="+">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonSubtraction" alignment="CENTER" layoutX="166.0" layoutY="251.0" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#handleButtonSubtractionAction" prefHeight="40.0" prefWidth="60.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonMultiplication" alignment="CENTER" layoutX="166.0" layoutY="201.0" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#handleButtonMultiplicationAction" prefHeight="40.0" prefWidth="60.0" text="*">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonDivision" alignment="CENTER" layoutX="166.0" layoutY="151.0" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#handleButtonDivisionAction" prefHeight="40.0" prefWidth="60.0" text="/">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonClearTheEndCharAction" alignment="CENTER" defaultButton="true" layoutX="234.0" layoutY="225.0" maxHeight="141.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#handleButtonClearTheEndCharAction" prefHeight="115.0" prefWidth="60.0" text="C">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <!--<Button fx:id="buttonExponentiation" alignment="CENTER" dFXMLDocCalc_08-29th-2017_11-30sable="true" focusTraversable="false" layoutX="167.0" layoutY="101.0" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#handleButtonExponentiationAction" prefHeight="40.0" prefWidth="60.0" text="^">-->
+      <Button fx:id="buttonExponentiation" alignment="CENTER" layoutX="167.0" layoutY="101.0" maxHeight="40.0" maxWidth="60.0" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#handleButtonExponentiationAction" prefHeight="40.0" prefWidth="60.0" text="^">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+
+   </children>
+</AnchorPane>
+
+<!-- Szablon został opracowany przez Tomasza Topolewskiego -->
